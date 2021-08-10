@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".User_interface_1"
+    android:padding="20dp">
+
+    <ImageView
+        android:layout_width="160dp"
+        android:layout_height="165dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/cash"
+        android:layout_marginTop="20sp"
+        android:id="@+id/cash1"/>
+    <Button
+        android:layout_width="290sp"
+        android:layout_height="wrap_content"
+        android:text="Check Balance"
+        android:layout_below="@id/cash1"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_round"
+        android:textSize="18sp"
+        android:textAllCaps="false"
+        android:id="@+id/button_cash"
+        android:layout_marginTop="10sp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ride1"
+        android:text="Start a Ride:"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_below="@id/button_cash"
+        android:layout_marginTop="20sp"
+        android:layout_marginLeft="18sp"/>
+
+    <EditText
+        android:id="@+id/Edit_ride1"
+        android:layout_width="309dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ride1"
+        android:hint="Enter Your Starting point"
+        android:layout_marginLeft="18sp"/>
+    <EditText
+        android:id="@+id/Edit_ride2"
+        android:layout_width="309dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Edit_ride1"
+        android:layout_marginTop="6sp"
+        android:hint="Enter Your Exit point"
+        android:layout_marginLeft="18sp"/>
+
+
+
+
+
+
+</RelativeLayout>

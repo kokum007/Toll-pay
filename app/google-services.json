@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "14875443579",
+    "project_id": "ex-pay-5dae4",
+    "storage_bucket": "ex-pay-5dae4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:14875443579:android:b1ab134301b1cfc27c7dde",
+        "android_client_info": {
+          "package_name": "com.example.expay"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "14875443579-s1n3df4f734quh4j6p7eptkn4aa1k48f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBOx85aZrxzHo2v3m7RVKyqwgLoUKgSRq4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "14875443579-s1n3df4f734quh4j6p7eptkn4aa1k48f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
