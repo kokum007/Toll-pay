@@ -8,8 +8,10 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-        <activity android:name=".Reg"></activity>
+        android:theme="@style/AppTheme">
+        <activity android:name=".newlogin"></activity>
+        <activity android:name=".home" />
+        <activity android:name=".Reg" />
         <activity android:name=".User_interface_1" />
         <activity android:name=".Payment" />
         <activity android:name=".Registration" />

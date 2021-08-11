@@ -24,6 +24,7 @@ public class Reg extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_reg);
+
         txt_name=findViewById(R.id.com_name);
         txt_username=findViewById(R.id.num_plate);
         btn_next=findViewById(R.id.btn);
@@ -46,8 +47,10 @@ public class Reg extends AppCompatActivity {
     {
 
         String Com_name=txt_username.getText().toString();
-        DatabaseReference reference= FirebaseDatabase.getInstance().getReference().child("Users").child(Com_name);
+        DatabaseReference reference= FirebaseDatabase.getInstance().getReference().child(Com_name);
         reference.addListenerForSingleValueEvent(new ValueEventListener() {
+
+
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
 
@@ -56,14 +59,21 @@ public class Reg extends AppCompatActivity {
                     Toast.makeText(getApplicationContext(),"Data Already Exits",Toast.LENGTH_LONG).show();
                 }
                 else
-                {String Com_name=txt_name.getText().toString();
+                {
+                    String Com_name=txt_name.getText().toString();
                     String num_plate=txt_username.getText().toString();
+                    int rfid = 123456789;
+                    int credit = 100;
+                    int state = 1;
+
                     FirebaseDatabase rootNode;
                     DatabaseReference reference;
                     rootNode=FirebaseDatabase.getInstance();
-                    reference=rootNode.getReference("Users");
-                    UserHelperClass helperClass=new UserHelperClass(num_plate,Com_name);
+                    reference=rootNode.getReference();
+
+                    UserHelperClass helperClass=new UserHelperClass(num_plate,Com_name,rfid,credit,state);
                     reference.child(Com_name).setValue(helperClass);
+
                     Toast.makeText(getApplicationContext(),"Successfully Saved",Toast.LENGTH_LONG).show();
 
                 }

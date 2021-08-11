@@ -68,8 +68,8 @@ public class Registration extends AppCompatActivity {
                     DatabaseReference reference;
                     rootNode=FirebaseDatabase.getInstance();
                     reference=rootNode.getReference("Users");
-                    UserHelperClass helperClass=new UserHelperClass(num_plate,Com_name);
-                    reference.child(Com_name).setValue(helperClass);
+                    //UserHelperClass helperClass=new UserHelperClass(num_plate,Com_name);
+                    //reference.child(Com_name).setValue(helperClass);
                     Toast.makeText(getApplicationContext(),"Successfully Saved",Toast.LENGTH_LONG).show();
 
                 }
