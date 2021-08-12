@@ -91,7 +91,7 @@ public class newlogin extends AppCompatActivity {
                         if (task.isSuccessful()){
                             //redirect to home page
 
-                            startActivity(new Intent(newlogin.this,User_interface_1.class));
+                            startActivity(new Intent(newlogin.this,home.class));
                             progressBar.setVisibility(View.GONE);
                         }else {
                             Toast.makeText(newlogin.this,"Failed to login please check your credentials",Toast.LENGTH_LONG).show();

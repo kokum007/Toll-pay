@@ -22,7 +22,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/bungee"
-        android:text="Hello there, Welcome Back"
+        android:text="Hello Rider, Welcome Back"
         android:textAllCaps="false"
         android:textColor="#000000"
         android:textColorHint="#FFFFFF"

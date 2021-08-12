@@ -1,8 +1,8 @@
 package com.example.expay;
 
 public class UserHelperClass {
-    String num_plate,Com_Name;
-    int rfid, credit, state;
+    String num_plate,Com_Name, rfid;
+    int  credit, state;
 
     public String getNum_plate() {
         return num_plate;
@@ -20,10 +20,10 @@ public class UserHelperClass {
         Com_Name = com_Name;
     }
 
-    public int getRfid() {
+    public String getRfid() {
         return rfid;
     }
-    public void setRfid(int rfid) {
+    public void setRfid(String rfid) {
         this.rfid = rfid;
     }
 
@@ -41,7 +41,7 @@ public class UserHelperClass {
         this.state = state;
     }
 
-    public UserHelperClass(String num_plate, String com_Name, int rfid, int credit, int state) {
+    public UserHelperClass(String num_plate, String com_Name, String rfid, int credit, int state) {
         this.num_plate = num_plate;
         Com_Name = com_Name;
         this.rfid = rfid;
