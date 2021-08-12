@@ -16,7 +16,7 @@
         android:layout_height="wrap_content"
         android:gravity="start"
         android:padding="10sp"
-        android:text="Enter your vehicle details"
+        android:text="Fill All the Details..."
         android:background="@drawable/round_corner"
         android:textColor="@color/white"
         android:textSize="30sp" />
@@ -97,7 +97,7 @@
             android:layout_height="wrap_content"
             android:gravity="start"
             android:padding="1sp"
-            android:text="Company Name:"
+            android:text="Your Name:"
             android:textColor="@color/black"
             android:textSize="20sp" />
 

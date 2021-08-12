@@ -120,6 +120,8 @@ public class Reg extends AppCompatActivity {
                                         public void onComplete(@NonNull Task<Void> task) {
 
                                             if(task.isSuccessful()) {
+                                                startActivity(new Intent(Reg.this, Payment.class));
+
                                                 Toast.makeText(Reg.this, "User has been registered successfully", Toast.LENGTH_SHORT).show();
                                                 progressBar.setVisibility(View.GONE);
                                             }else{
